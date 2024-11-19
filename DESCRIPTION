@@ -1,10 +1,12 @@
 Package: wnbaherstory
-Title: What the Package Does (One Line, Title Case)
+Title: wnbaherstory
 Version: 0.0.0.9000
 Authors@R: 
     person("Jane", "Loo", , "jloo@smith.edu", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+           comment = c(ORCID = "YOUR-ORCID-ID")),
+    person("Ela", "Sylvester", , "esylvester@smith.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID")),
+Description: WNBA package showing historical trends
 License: GPL (>= 3)
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
