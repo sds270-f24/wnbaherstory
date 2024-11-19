@@ -27,3 +27,4 @@ winRate <- function(team_name) {
   total_games <- total_wins + total_losses
   rate <- if (total_games > 0) total_wins / total_games else NA
   return(rate * 100)
+}
