@@ -6,6 +6,8 @@ Authors@R:
            comment = c(ORCID = "YOUR-ORCID-ID")),
     person("Ela", "Sylvester", , "esylvester@smith.edu", role = c("aut", "cre"),
            comment = c(ORCID = "YOUR-ORCID-ID")),
+    person("Alina", "Abdulina", , "aabdulina@smith.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID")),
 Description: WNBA package showing historical trends
 License: GPL (>= 3)
 Encoding: UTF-8
