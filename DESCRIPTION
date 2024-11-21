@@ -1,15 +1,24 @@
 Package: wnbaherstory
-Title: wnbaherstory
+Title: WNBA Historical Trends Package
 Version: 0.0.0.9000
 Authors@R: 
-    person("Jane", "Loo", , "jloo@smith.edu", role = c("aut", "cre"),
+    c(person("Jane", "Loo", , "jloo@smith.edu", role = c("aut", "cre"),
            comment = c(ORCID = "YOUR-ORCID-ID")),
-    person("Ela", "Sylvester", , "esylvester@smith.edu", role = c("aut", "cre"),
+    person("Ela", "Sylvester", , "esylvester@smith.edu", role = c("aut"),
            comment = c(ORCID = "YOUR-ORCID-ID")),
-    person("Alina", "Abdulina", , "aabdulina@smith.edu", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID")),
+    person("Alina", "Abdulina", , "aabdulina@smith.edu", role = c("aut"),
+           comment = c(ORCID = "YOUR-ORCID-ID")))
 Description: WNBA package showing historical trends
 License: GPL (>= 3)
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports:
+  dplyr, 
+  rvest, 
+  stringr,
+  tidygeocoder,
+  ggplot2
