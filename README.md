@@ -1,2 +1,38 @@
-# wnbar
-WNBA package showing historical trends
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+# wnbaherstory
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+## Overview
+
+The goal of wnbaherstory is to provide historical data on the WNBA.
+Users can discover past and present WNBA teams, player history, player
+awards, game attendance and more.
+
+## Installation
+
+You can install the development version of wnbaherstory from
+[GitHub](https://github.com/) with:
+
+``` r
+# install.packages("pak")
+pak::pak("sds270-f24/wnbaherstory")
+```
+
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+``` r
+library(wnbaherstory)
+## basic example code
+```
+
+## Contributors
+
+- [Jane Loo](https://github.com/janeloo10)
+- [Ella Sylvester](https://github.com/esylvester04)
+- [Alina Abdulina](https://github.com/AlinaAbdulina)

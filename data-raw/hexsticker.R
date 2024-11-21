@@ -14,7 +14,7 @@ sticker(
   s_y = 0.75,
   p_size = 15,
   h_fill = '#fa4d00',
-  h_color = '#fa4d00',
+  h_color = 'black',
   h_size = 1.5,
   p_color = 'white'
 ) %>% print()
