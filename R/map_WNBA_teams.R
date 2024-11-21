@@ -1,6 +1,6 @@
 #' Function shows map of all WNBA teams past and present at any given time
 #' 
-#' @param year_range A numerical year range formatted as staryear:endyear
+#' @param year_range A numerical year range formatted as startyear:endyear
 #' @author Jane Loo
 #' @details Gives historical data of how WNBA teams have changed or moved over time. 
 #' @examples
