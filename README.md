@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# wnbaherstory
+# wnbaherstory R Package <img src="data-raw/wnba.png" align="right" height="139"/>
 
 <!-- badges: start -->
 <!-- badges: end -->
@@ -18,8 +18,8 @@ You can install the development version of wnbaherstory from
 [GitHub](https://github.com/) with:
 
 ``` r
-# install.packages("pak")
-pak::pak("sds270-f24/wnbaherstory")
+# install.packages("devtools")
+devtools::install_github("sds270-f24/wnbaherstory")
 ```
 
 ## Example
@@ -27,9 +27,22 @@ pak::pak("sds270-f24/wnbaherstory")
 This is a basic example which shows you how to solve a common problem:
 
 ``` r
-library(wnbaherstory)
-## basic example code
+#library(wnbaherstory)
+#map_WNBA_teams(year_range = 1997:2024)
 ```
+
+``` r
+library(wnbaherstory)
+storm_win_rate <- winRate("Seattle Storm")
+cat("Seattle Storm Winning Percentage:", storm_win_rate, "%\n")
+#> Seattle Storm Winning Percentage: 52.60664 %
+```
+
+## See Also
+
+Basketball Reference: The primary source of data for this package.
+tidygeocoder: Used for geocoding team locations. ggplot2: Visualization
+tool for mapping.
 
 ## Contributors
 
