@@ -7,7 +7,7 @@ Authors@R:
     person("Ela", "Sylvester", , "esylvester@smith.edu", role = c("aut"),
            comment = c(ORCID = "YOUR-ORCID-ID")),
     person("Alina", "Abdulina", , "aabdulina@smith.edu", role = c("aut"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
+           comment = c(ORCID = "YOUR-ORCID-ID")))
 Description: WNBA package showing historical trends in the league. 
 License: GPL (>= 3)
 Encoding: UTF-8
