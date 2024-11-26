@@ -10,3 +10,4 @@ library(testthat)
 library(wnbaherstory)
 
 test_check("wnbaherstory")
+
