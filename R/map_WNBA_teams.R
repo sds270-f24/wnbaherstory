@@ -10,10 +10,12 @@
 #' @import ggplot2
 #' @source <https://www.basketball-reference.com/wnba/teams/>
 #' @export
+#' 
+
+# Adding global variables
+utils::globalVariables(c("From", "To", "City", "long", "lat", "group", "Team"))
 
 map_WNBA_teams <- function(year_range = 1997:2024) {
-  # Adding global variables
-  utils::globalVariables(c("From", "To", "City", "long", "lat", "group", "Team"))
   
   # Use rvest package to scrape 
   url <- "https://www.basketball-reference.com/wnba/teams/"
