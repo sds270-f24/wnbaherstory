@@ -1,3 +1,6 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
+<<<<<<< HEAD
+=======
 ^README\.Rmd$
+>>>>>>> aa0e3f9778457d076ff064bea1150e6512bbd229
