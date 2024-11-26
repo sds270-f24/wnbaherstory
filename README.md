@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
@@ -49,3 +50,7 @@ tool for mapping.
 - [Jane Loo](https://github.com/janeloo10)
 - [Ella Sylvester](https://github.com/esylvester04)
 - [Alina Abdulina](https://github.com/AlinaAbdulina)
+=======
+# wnbar
+WNBA package showing historical trends
+>>>>>>> c3608f6ef3c9cbf29730d1e4518c0bc79516aa52

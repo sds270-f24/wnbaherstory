@@ -1,6 +1,4 @@
 #' Function shows map of all WNBA teams past and present at any given time
-#' 
-#' @param year_range A numerical year range formatted as startyear:endyear
 #' @author Jane Loo
 #' @details Gives historical data of how WNBA teams have changed or moved over time. 
 #' @examples
@@ -10,10 +8,10 @@
 #' @import ggplot2
 #' @source <https://www.basketball-reference.com/wnba/teams/>
 #' @export
+# Adding global variables
+globals_v <- utils::globalVariables(c("From", "To", "City", "long", "lat", "group", "Team"))
 
 map_WNBA_teams <- function(year_range = 1997:2024) {
-  # Adding global variables
-  utils::globalVariables(c("From", "To", "City", "long", "lat", "group", "Team"))
   
   # Use rvest package to scrape 
   url <- "https://www.basketball-reference.com/wnba/teams/"
