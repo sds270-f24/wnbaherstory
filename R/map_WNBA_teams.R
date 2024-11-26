@@ -13,7 +13,7 @@
 #' 
 
 # Adding global variables
-utils::globalVariables(c("From", "To", "City", "long", "lat", "group", "Team"))
+globals_v <- utils::globalVariables(c("From", "To", "City", "long", "lat", "group", "Team"))
 
 map_WNBA_teams <- function(year_range = 1997:2024) {
   
