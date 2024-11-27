@@ -1,8 +1,10 @@
+---
+output: github_document
+---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
 # wnbaherstory <img src="data-raw/wnbaherstory.png" align="right" height="139"/>
-
 <!-- badges: start -->
 <!-- badges: end -->
 
@@ -13,7 +15,6 @@ Users can discover past and present WNBA teams, player history, player
 awards, game attendance and more.
 
 ## Installation
-
 You can install the development version of wnbaherstory from
 [GitHub](https://github.com/) with:
 
@@ -21,20 +22,15 @@ You can install the development version of wnbaherstory from
 # install.packages("devtools")
 devtools::install_packages("sds270-f24/wnbaherstory")
 ```
-
 ## Example
-
 This is a basic example which shows you how to solve a common problem:
-
-``` r
+```{r}
 library(wnbaherstory)
 winRate("Seattle Storm")
 ```
 
-    ## [1] 52.60664
-
 ## Contributors
-
 - [Jane Loo](https://github.com/janeloo10)
 - [Ella Sylvester](https://github.com/esylvester04)
 - [Alina Abdulina](https://github.com/AlinaAbdulina)
+
