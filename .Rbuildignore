@@ -5,3 +5,4 @@
 ^README\.Rmd$
 >>>>>>> baf1065babb172866c30f818f78fc6a8dbcf0b19
 ^data-raw$
+^\.github$
