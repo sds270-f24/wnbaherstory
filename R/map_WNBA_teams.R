@@ -1,3 +1,4 @@
+utils::globalVariables(c("From", "To", "City", "long", "lat", "group", "Team"))
 #' Function shows map of all WNBA teams past and present at any given time
 #' @author Jane Loo
 #' @details Gives historical data of how WNBA teams have changed or moved over time. 
@@ -9,7 +10,6 @@
 #' @source <https://www.basketball-reference.com/wnba/teams/>
 #' @export
 # Adding global variables
-globals_v <- utils::globalVariables(c("From", "To", "City", "long", "lat", "group", "Team"))
 
 map_WNBA_teams <- function(year_range = 1997:2024) {
   
