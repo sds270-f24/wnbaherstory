@@ -24,12 +24,24 @@ You can install the development version of wnbaherstory from
 devtools::install_packages("sds270-f24/wnbaherstory")
 ```
 
+## Load
+
+``` r
+library(wnbaherstory)
+```
+
 ## Example
 
 This is a basic example which shows you how to solve a common problem:
 
 ``` r
 library(wnbaherstory)
+```
+
+    ## Warning: replacing previous import 'ggplot2::last_plot' by 'plotly::last_plot'
+    ## when loading 'wnbaherstory'
+
+``` r
 winRate("Seattle Storm")
 ```
 

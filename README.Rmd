@@ -23,6 +23,12 @@ You can install the development version of wnbaherstory from
 # install.packages("devtools")
 devtools::install_packages("sds270-f24/wnbaherstory")
 ```
+
+## Load
+``` r
+library(wnbaherstory)
+```
+
 ## Example
 This is a basic example which shows you how to solve a common problem:
 ```{r}
