@@ -12,7 +12,7 @@ A data frame with 6214 rows and 13 variables:
 \item{Day of Week}{Factor. The day of the week the teams played.}
 \item{Month}{Factor. The month the teams played.}
 \item{Day}{Integer. Day of the week the teams played.}
-\item{Time(ET)}{The time the game was played at.}
+\item{Time (ET)}{The time the game was played at.}
 \item{Game Type}{Factor. The game is classified either as regular season, Seminfinals, Finals, Eastern Conference Semifinals etc.}
 \item{Home Team}{Fcator. Name of the home team.}
 \item{Away Team}{Factor. Name of the away team.}
