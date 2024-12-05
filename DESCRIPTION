@@ -23,4 +23,6 @@ Imports:
   rvest, 
   stringr,
   tidygeocoder,
-  ggplot2
+  ggplot2,
+  RColorBrewer,
+  plotly
