@@ -7,6 +7,7 @@
 \format{
 A data frame with 6214 rows and 13 variables:
 \describe{
+\item{...1}{Number of games played}
 \item{Year}{Integer. The year the teams played.}
 \item{Day of Week}{Factor. The day of the week the teams played.}
 \item{Month}{Factor. The month the teams played.}
