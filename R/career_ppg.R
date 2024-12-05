@@ -1,4 +1,4 @@
-utils::globalVariables(c("Year", "PTS"))
+utils::globalVariables(c("Year", "PST"))
 #' Function shows career PPG of top WNBA scorers
 #' 
 #' @description This function scrapes career points per game (PPG) data for specified WNBA players from Basketball Reference and returns an interactive plot showing points scored over the years.
@@ -37,7 +37,7 @@ career_ppg <- function(players = NULL) {
     players <- names(player_urls)
   }
   
-  # Scrape and process data for players
+  # scarping the data
   all_data <- dplyr::bind_rows(lapply(players, function(player_name) {
     page <- rvest::read_html(player_urls[[player_name]])
     
@@ -49,7 +49,7 @@ career_ppg <- function(players = NULL) {
       rvest::html_table(fill = TRUE) |>
       as.data.frame()
     
-    # Extract only Year and PTS columns, convert to numeric
+    # convert years and points to numeric
     data <- stats_table |>
       dplyr::select(Year, PTS) |>
       dplyr::mutate(
@@ -57,12 +57,16 @@ career_ppg <- function(players = NULL) {
         PTS = as.numeric(PTS),    
         Player = player_name      
       ) |>
-      dplyr::filter(!is.na(Year), !is.na(PTS))  
+      dplyr::filter(!is.na(Year), !is.na(PTS))  # Remove NAs
+    
+    # Filter out rows where 'Year' couldn't be converted to numeric
+    data <- data |>
+      dplyr::filter(!is.na(Year))  
     
     return(data)
   }))
   
-  # Create the interactive plot
+  # interactive plot
   plot <- plotly::plot_ly(
     data = all_data,
     x = ~Year,
@@ -78,9 +82,9 @@ career_ppg <- function(players = NULL) {
   
   plot <- plot |>
     plotly::layout(
-      title = "Points Over the Years",
+      title = "High Scorers of All Time",
       xaxis = list(title = "Year"),
-      yaxis = list(title = "PTS"),
+      yaxis = list(title = "Points"),
       showlegend = TRUE
     )
   

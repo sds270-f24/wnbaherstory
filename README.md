@@ -10,9 +10,18 @@
 
 ## Overview
 
-The goal of wnbaherstory is to provide historical data on the WNBA.
-Users can discover past and present WNBA teams, player history, player
-awards, game attendance and more.
+wnbaherstory is an R package that provides historical data on the WNBA
+(Women’s National Basketball Association). The WNBA was founded in 1997
+and since then has had a lot of changes from team re-locations to
+ownership changes to different players going in and out of the league.
+This package has data on team win rate, attendance, team location, and
+the top high scorers. All of this data is historical and can be traced
+from the beginning of the WNBA (1997) to the present. User can have the
+option to view historical data of all time, or user can put in
+parameters in each function to specify what years, players, or teams
+they want to specifically look at. We hope this package can not only
+answer historical questions about the WNBA but also allow for users to
+see how the league has changed and grown over time.
 
 ## Installation
 
@@ -30,22 +39,39 @@ devtools::install_packages("sds270-f24/wnbaherstory")
 library(wnbaherstory)
 ```
 
-## Example
-
-This is a basic example which shows you how to solve a common problem:
+## Example: Win Percentage
 
 ``` r
 library(wnbaherstory)
-```
-
-    ## Warning: replacing previous import 'ggplot2::last_plot' by 'plotly::last_plot'
-    ## when loading 'wnbaherstory'
-
-``` r
 winRate("Seattle Storm")
 ```
 
     ## [1] 52.60664
+
+## Example: High Scorers of All Time
+
+``` r
+career_ppg()
+# Add player names for specific players
+```
+
+<img src="man/screenshot.png" align="center" height="300"/>
+
+## Example: WNBA team locations
+
+``` r
+map_WNBA_teams(year_range = 2021:2024)
+```
+
+![](README_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
+
+## Example: Attendance
+
+``` r
+plot_wnba_attendance("Los Angeles Sparks")
+```
+
+![](README_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
 
 ## Contributors
 
