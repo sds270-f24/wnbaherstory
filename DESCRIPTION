@@ -24,5 +24,4 @@ Imports:
   stringr,
   tidygeocoder,
   ggplot2,
-  RColorBrewer,
-  plotly
+  RColorBrewer
