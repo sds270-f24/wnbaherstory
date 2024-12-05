@@ -9,6 +9,9 @@
 \usage{
 map_WNBA_teams(year_range = 1997:2024)
 }
+\arguments{
+\item{year_range}{a desired time period of years, formatted as "firstyear:lastyear"}
+}
 \value{
 A US Map of all WNBA teams geographical location.
 }
