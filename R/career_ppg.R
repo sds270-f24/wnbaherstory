@@ -3,6 +3,7 @@
 #' @description This function scrapes career points per game (PPG) data for specified WNBA players from Basketball Reference and returns an interactive plot showing points scored over the years.
 #' @author Jane Loo
 #' @details This function fetches career points (PTS) and year (Year) data for top WNBA players, converts the data to numeric, and visualizes it using an interactive plot.
+#' @param players the first and last name of WNBA player(s)
 #' @examples
 #' career_ppg()
 #' career_ppg("Diana Taurasi")
