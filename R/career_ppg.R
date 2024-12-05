@@ -1,3 +1,4 @@
+utils::globalVariables(c("Year", "PST"))
 #' Function shows career PPG of top WNBA scorers
 #' 
 #' @description This function scrapes career points per game (PPG) data for specified WNBA players from Basketball Reference and returns an interactive plot showing points scored over the years.
