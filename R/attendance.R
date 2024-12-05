@@ -1,3 +1,4 @@
+utils::globalVariables(c("All_Game_Attendance", "Home Team", "Year", "Attendance", "Average_Attendance"))
 #' Function graphs a WNBA team attendance record over the years
 #' @author Alina Abdulina
 #' @param team string containing the name of the team
