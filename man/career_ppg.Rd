@@ -9,6 +9,9 @@
 \usage{
 career_ppg(players = NULL)
 }
+\arguments{
+\item{players}{the first and last name of WNBA player(s)}
+}
 \value{
 An interactive plot showing the career points scored by WNBA players over the years.
 }

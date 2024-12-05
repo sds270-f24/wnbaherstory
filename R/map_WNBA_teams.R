@@ -5,6 +5,7 @@ utils::globalVariables(c("From", "To", "City", "long", "lat", "group", "Team"))
 #' @examples
 #' map_WNBA_teams(year_range = 2021:2024)
 #' map_WNBA_teams(year_range = 1997:2024)
+#' @param year_range a desired time period of years, formatted as "firstyear:lastyear"
 #' @return A US Map of all WNBA teams geographical location.
 #' @import ggplot2
 #' @source <https://www.basketball-reference.com/wnba/teams/>
