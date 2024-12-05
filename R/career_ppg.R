@@ -12,7 +12,6 @@ utils::globalVariables(c("Year", "PTS"))
 #' @import ggplot2
 #' @import rvest
 #' @import dplyr
-#' @import plotly
 #' @import RColorBrewer
 #' @source <https://www.basketball-reference.com/wnba/players/>
 #' @export
