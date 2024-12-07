@@ -42,23 +42,34 @@ career_ppg <- function(players = NULL) {
     # Extract the tables
     stats_tables <- rvest::html_nodes(page, "table")
     
-    # Extract the second table
-    stats_table <- stats_tables[[2]] |>
-      rvest::html_table(fill = TRUE) |>
-      as.data.frame()
-    
-    # Clean 'Year' and 'PTS' columns
-    data <- stats_table |>
-      dplyr::select(Year, PTS) |>
-      dplyr::mutate(
-        # Ensure 'Year' is numeric and remove non-numeric values (e.g., empty strings or invalid data)
-        Year = ifelse(grepl("^[0-9]{4}$", Year), as.numeric(Year), NA),  # Only valid 4-digit years
-        PTS = as.numeric(PTS)  # Convert PTS to numeric
-      ) |>
-      dplyr::filter(!is.na(Year), !is.na(PTS))  # Remove rows with NA Year or PTS
-    
-    return(data)
+    # Check if the second table exists
+    if(length(stats_tables) >= 2) {
+      stats_table <- stats_tables[[2]] |>
+        rvest::html_table(fill = TRUE) |>
+        as.data.frame()
+      
+      # Clean 'Year' and 'PTS' columns
+      data <- stats_table |>
+        dplyr::select(Year, PTS) |>
+        dplyr::mutate(
+          # Ensure 'Year' is numeric and remove non-numeric values (e.g., empty strings or invalid data)
+          Year = ifelse(grepl("^[0-9]{4}$", Year), as.numeric(Year), NA),  # Only valid 4-digit years
+          PTS = as.numeric(PTS)  # Convert PTS to numeric
+        ) |>
+        dplyr::filter(!is.na(Year), !is.na(PTS))  # Remove rows with NA Year or PTS
+      
+      # Add player name to the dataset for plotting
+      data$Player <- player_name
+      
+      return(data)
+    } else {
+      warning(paste("Stats table not found for", player_name))
+      return(NULL)
+    }
   }))
+  
+  # Remove any NULL data (in case a player's data couldn't be scraped)
+  all_data <- dplyr::filter(all_data, !is.null(Player))
   
   # Interactive plot
   plot <- plotly::plot_ly(
@@ -84,3 +95,4 @@ career_ppg <- function(players = NULL) {
   
   return(plot)
 }
+
