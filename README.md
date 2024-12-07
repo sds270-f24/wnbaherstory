@@ -43,39 +43,37 @@ devtools::install_packages("sds270-f24/wnbaherstory")
 library(wnbaherstory)
 ```
 
-## Example: Win Percentage
+## Examples:
 
 ``` r
 library(wnbaherstory)
+
 winRate("Seattle Storm")
 ```
 
     ## [1] 52.60664
+
+``` r
+map_WNBA_teams(year_range = 2021:2024)
+```
+
+![](README_files/figure-gfm/unnamed-chunk-1-1.png)<!-- -->
+
+``` r
+plot_wnba_attendance("Los Angeles Sparks")
+```
+
+![](README_files/figure-gfm/unnamed-chunk-1-2.png)<!-- -->
 
 ## Example: High Scorers of All Time
 
 ``` r
 career_ppg()
 # Add player names for specific players
+# Interactive Plot
 ```
 
 <img src="man/screenshot.png" align="center" height="300"/>
-
-## Example: WNBA team locations
-
-``` r
-map_WNBA_teams(year_range = 2021:2024)
-```
-
-![](README_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
-
-## Example: Attendance
-
-``` r
-plot_wnba_attendance("Los Angeles Sparks")
-```
-
-![](README_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
 
 ## Contributors
 

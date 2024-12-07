@@ -32,28 +32,25 @@ devtools::install_packages("sds270-f24/wnbaherstory")
 library(wnbaherstory)
 ```
 
-## Example: Win Percentage
+## Examples: 
 ```{r, warning=FALSE, message=FALSE}
 library(wnbaherstory)
+
 winRate("Seattle Storm")
+
+map_WNBA_teams(year_range = 2021:2024)
+
+plot_wnba_attendance("Los Angeles Sparks")
 ```
 
 ## Example: High Scorers of All Time
 ```{r, eval=FALSE}
 career_ppg()
 # Add player names for specific players
+# Interactive Plot
 ```
 <img src="man/screenshot.png" align="center" height="300"/>
 
-## Example: WNBA team locations 
-```{r, warning=FALSE, message=FALSE}
-map_WNBA_teams(year_range = 2021:2024)
-```
-
-## Example: Attendance
-```{r}
-plot_wnba_attendance("Los Angeles Sparks")
-```
 
 ## Contributors
 - [Jane Loo](https://github.com/janeloo10)
