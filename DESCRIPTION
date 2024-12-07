@@ -1,6 +1,6 @@
 Package: wnbaherstory
 Title: WNBA Historical Trends Package
-Version: 0.0.0.9001
+Version: 0.0.0.9002
 Authors@R: 
     c(person("Jane", "Loo", , "jloo@smith.edu", role = c("aut", "cre")),
     person("Ella", "Sylvester", , "esylvester@smith.edu", role = c("aut")),
