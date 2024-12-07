@@ -2,12 +2,9 @@ Package: wnbaherstory
 Title: WNBA Historical Trends Package
 Version: 0.0.0.9000
 Authors@R: 
-    c(person("Jane", "Loo", , "jloo@smith.edu", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID")),
-    person("Ela", "Sylvester", , "esylvester@smith.edu", role = c("aut"),
-           comment = c(ORCID = "YOUR-ORCID-ID")),
-    person("Alina", "Abdulina", , "aabdulina@smith.edu", role = c("aut"),
-           comment = c(ORCID = "YOUR-ORCID-ID")))
+    c(person("Jane", "Loo", , "jloo@smith.edu", role = c("aut", "cre")),
+    person("Ella", "Sylvester", , "esylvester@smith.edu", role = c("aut")),
+    person("Alina", "Abdulina", , "aabdulina@smith.edu", role = c("aut")))
 Description: WNBA package showing historical trends in the league. 
 License: GPL (>= 3)
 Encoding: UTF-8
