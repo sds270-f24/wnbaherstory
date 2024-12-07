@@ -16,7 +16,7 @@ status](https://www.r-pkg.org/badges/version/wnbaherstory)](https://CRAN.R-proje
 
 wnbaherstory is an R package that provides historical data on the WNBA
 (Women’s National Basketball Association). The WNBA was founded in 1997
-and since then has had a lot of changes, from team re-locations to
+and since then has had a lot of changes from team re-locations to
 ownership changes to different players going in and out of the league.
 This package has data on team win rate, attendance, team location, and
 the top high scorers. All of this data is historical and can be traced
