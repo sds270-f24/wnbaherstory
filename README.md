@@ -6,6 +6,10 @@
 <!-- badges: start -->
 
 [![R-CMD-check](https://github.com/sds270-f24/wnbaherstory/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/sds270-f24/wnbaherstory/actions/workflows/R-CMD-check.yaml)
+
+[![CRAN
+version](https://www.r-pkg.org/badges/version/wnbaherstory)](https://cran.r-project.org/package=wnbaherstory)
+
 <!-- badges: end -->
 
 ## Overview
