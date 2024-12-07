@@ -22,8 +22,7 @@ Function shows map of all WNBA teams past and present at any given time
 Gives historical data of how WNBA teams have changed or moved over time.
 }
 \examples{
-map_WNBA_teams(year_range = 2021:2024)
-map_WNBA_teams(year_range = 1997:2024)
+map_WNBA_teams(year_range = 2023:2024)
 }
 \author{
 Jane Loo
