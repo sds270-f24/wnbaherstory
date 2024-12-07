@@ -22,4 +22,5 @@ Imports:
   tidygeocoder,
   ggplot2,
   RColorBrewer,
-  plotly
+  plotly,
+  maps

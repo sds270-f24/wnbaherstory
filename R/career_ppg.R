@@ -15,7 +15,6 @@ utils::globalVariables(c("Year", "PTS"))
 #' @import RColorBrewer
 #' @source <https://www.basketball-reference.com/wnba/players/>
 #' @export
-
 career_ppg <- function(players = NULL) {
   
   player_urls <- list(
@@ -36,7 +35,7 @@ career_ppg <- function(players = NULL) {
     players <- names(player_urls)
   }
   
-  # scarping the data
+  # Scraping the data
   all_data <- dplyr::bind_rows(lapply(players, function(player_name) {
     page <- rvest::read_html(player_urls[[player_name]])
     
@@ -48,24 +47,20 @@ career_ppg <- function(players = NULL) {
       rvest::html_table(fill = TRUE) |>
       as.data.frame()
     
-    # convert years and points to numeric
+    # Clean 'Year' and 'PTS' columns
     data <- stats_table |>
       dplyr::select(Year, PTS) |>
       dplyr::mutate(
-        Year = as.numeric(Year),  
-        PTS = as.numeric(PTS),    
-        Player = player_name      
+        # Ensure 'Year' is numeric and remove non-numeric values (e.g., empty strings or invalid data)
+        Year = ifelse(grepl("^[0-9]{4}$", Year), as.numeric(Year), NA),  # Only valid 4-digit years
+        PTS = as.numeric(PTS)  # Convert PTS to numeric
       ) |>
-      dplyr::filter(!is.na(Year), !is.na(PTS))  # Remove NAs
-    
-    # Filter out rows where 'Year' couldn't be converted to numeric
-    data <- data |>
-      dplyr::filter(!is.na(Year))  
+      dplyr::filter(!is.na(Year), !is.na(PTS))  # Remove rows with NA Year or PTS
     
     return(data)
   }))
   
-  # interactive plot
+  # Interactive plot
   plot <- plotly::plot_ly(
     data = all_data,
     x = ~Year,
