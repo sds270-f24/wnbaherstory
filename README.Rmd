@@ -6,10 +6,11 @@ always_allow_html: true
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
 # wnbaherstory <img src="data-raw/wnbaherstory.png" align="right" height="139"/>
+
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/sds270-f24/wnbaherstory/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/sds270-f24/wnbaherstory/actions/workflows/R-CMD-check.yaml)
 
-[![CRAN version](https://www.r-pkg.org/badges/version/wnbaherstory)](https://cran.r-project.org/package=wnbaherstory)
+![CRAN version](https://www.r-pkg.org/badges/version/wnbaherstory)
 
 <!-- badges: end -->
 

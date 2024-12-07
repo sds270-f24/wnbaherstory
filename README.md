@@ -7,8 +7,11 @@
 
 [![R-CMD-check](https://github.com/sds270-f24/wnbaherstory/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/sds270-f24/wnbaherstory/actions/workflows/R-CMD-check.yaml)
 
-[![CRAN
-version](https://www.r-pkg.org/badges/version/wnbaherstory)](https://cran.r-project.org/package=wnbaherstory)
+<figure>
+<img src="https://www.r-pkg.org/badges/version/wnbaherstory"
+alt="CRAN version" />
+<figcaption aria-hidden="true">CRAN version</figcaption>
+</figure>
 
 <!-- badges: end -->
 
