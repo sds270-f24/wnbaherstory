@@ -1,6 +1,6 @@
 Package: wnbaherstory
 Title: WNBA Historical Trends Package
-Version: 0.0.0.9003
+Version: 0.1
 Authors@R: 
     c(person("Jane", "Loo", , "jloo@smith.edu", role = c("aut", "cre")),
     person("Ella", "Sylvester", , "esylvester@smith.edu", role = c("aut")),
@@ -19,7 +19,6 @@ Imports:
   dplyr, 
   rvest, 
   stringr,
-  tidygeocoder,
   ggplot2,
   RColorBrewer,
   plotly,

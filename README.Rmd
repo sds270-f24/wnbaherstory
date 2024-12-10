@@ -8,7 +8,7 @@ always_allow_html: true
 # wnbaherstory <img src="data-raw/wnbaherstory.png" align="right" height="139"/>
 
 <!-- badges: start -->
-[![R-CMD-check](https://github.com/sds270-f24/wnbaherstory/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/sds270-f24/wnbaherstory/.github/workflows/R-CMD-check.yaml) 
+[![R-CMD-check](https://github.com/sds270-f24/wnbaherstory/tree/main/.github/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/sds270-f24/wnbaherstory/tree/main/.github/workflows/R-CMD-check.yaml) 
 [![CRAN status](https://www.r-pkg.org/badges/version/wnbaherstory)](https://CRAN.R-project.org/package=wnbaherstory)
 <!-- badges: end -->
 
@@ -30,14 +30,17 @@ devtools::install_packages("sds270-f24/wnbaherstory")
 library(wnbaherstory)
 ```
 
-## Examples: 
-```{r, warning=FALSE, message=FALSE}
+## Examples:
+```{r, warning=FALSE, message=FALSE, fig.path="man/figures/"}
 library(wnbaherstory)
 
+# Example 1: Calculate win rate
 winRate("Seattle Storm")
 
+# Example 2: Map WNBA teams
 map_WNBA_teams(year_range = 2021:2024)
 
+# Example 3: Plot WNBA attendance
 plot_wnba_attendance("Los Angeles Sparks")
 ```
 
@@ -48,7 +51,6 @@ career_ppg()
 # Interactive Plot
 ```
 <img src="man/screenshot.png" align="center" height="300"/>
-
 
 ## Contributors
 - [Jane Loo](https://github.com/janeloo10)

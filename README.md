@@ -5,7 +5,7 @@
 
 <!-- badges: start -->
 
-[![R-CMD-check](https://github.com/sds270-f24/wnbaherstory/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/sds270-f24/wnbaherstory/.github/workflows/R-CMD-check.yaml)
+[![R-CMD-check](https://github.com/sds270-f24/wnbaherstory/tree/main/.github/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/sds270-f24/wnbaherstory/tree/main/.github/workflows/R-CMD-check.yaml)
 [![CRAN
 status](https://www.r-pkg.org/badges/version/wnbaherstory)](https://CRAN.R-project.org/package=wnbaherstory)
 <!-- badges: end -->
@@ -46,22 +46,25 @@ library(wnbaherstory)
 ``` r
 library(wnbaherstory)
 
+# Example 1: Calculate win rate
 winRate("Seattle Storm")
 ```
 
     ## [1] 52.60664
 
 ``` r
+# Example 2: Map WNBA teams
 map_WNBA_teams(year_range = 2021:2024)
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-1-1.png)<!-- -->
+![](man/figures/unnamed-chunk-1-1.png)<!-- -->
 
 ``` r
+# Example 3: Plot WNBA attendance
 plot_wnba_attendance("Los Angeles Sparks")
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-1-2.png)<!-- -->
+![](man/figures/unnamed-chunk-1-2.png)<!-- -->
 
 ## Example: High Scorers of All Time
 
