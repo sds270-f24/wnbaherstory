@@ -50,8 +50,7 @@ career_ppg()
 # Add player names for specific players
 # Interactive Plot
 ```
-<img src="https://raw.githubusercontent.com/sds270-f24/wnbaherstory/main/data-raw/screenshot.png" align="center" height="300"/>
-
+<img src="data-raw/screenshot.png" align="right" height="300"/>
 
 ## Contributors
 - [Jane Loo](https://github.com/janeloo10)
