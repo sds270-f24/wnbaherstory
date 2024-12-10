@@ -74,7 +74,7 @@ career_ppg()
 # Interactive Plot
 ```
 
-<img src="data-raw/screenshot.png" align="center" height="300"/>
+<img src="https://raw.githubusercontent.com/sds270-f24/wnbaherstory/main/data-raw/screenshot.png" align="center" height="300"/>
 
 ## Contributors
 
