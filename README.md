@@ -74,7 +74,7 @@ career_ppg()
 # Interactive Plot
 ```
 
-<img src="data-raw/screenshot.png" align="center" height="300"/>
+![](data-raw/screenshot.PNG)
 
 ## Contributors
 

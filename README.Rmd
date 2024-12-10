@@ -50,7 +50,7 @@ career_ppg()
 # Add player names for specific players
 # Interactive Plot
 ```
-<img src="data-raw/screenshot.png" align="center" height="300"/>
+![](data-raw/screenshot.PNG)
 
 ## Contributors
 - [Jane Loo](https://github.com/janeloo10)
