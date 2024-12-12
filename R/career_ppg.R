@@ -47,16 +47,15 @@ career_ppg <- function(players = NULL) {
       rvest::html_table(fill = TRUE) |>
       as.data.frame()
     
-    # Clean 'Year' and 'PTS' columns
+    # Cleaning columns
     data <- stats_table |>
       dplyr::select(Year, PTS) |>
       dplyr::mutate(
-        Player = player_name,  # Explicitly define Player variable
-        # Ensure 'Year' is numeric and remove non-numeric values (e.g., empty strings or invalid data)
+        Player = player_name,  
         Year = ifelse(grepl("^[0-9]{4}$", Year), as.numeric(Year), NA),  # Only valid 4-digit years
-        PTS = as.numeric(PTS)  # Convert PTS to numeric
+        PTS = as.numeric(PTS)  
       ) |>
-      dplyr::filter(!is.na(Year), !is.na(PTS))  # Remove rows with NA Year or PTS
+      dplyr::filter(!is.na(Year), !is.na(PTS))  
     
     return(data)
   }))
