@@ -1,4 +1,19 @@
 url: https://sds270-f24.github.io/wnbaherstory/
 template:
   bootstrap: 5
-
+  
+  
+reference:
+- title: Functions
+  desc: >
+    The functions that are included in this package
+  contents:
+    - career_ppg
+    - map_WNBA_teams
+    - plot_wnba_attendance
+    - winRate
+- title: Datasets
+  desc: >
+    Datasets that are used in order to run the plot_wnba_attendance() function
+  contents: 
+    - All_Game_Attendance
