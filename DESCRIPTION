@@ -14,6 +14,8 @@ Depends:
     R (>= 2.10)
 LazyData: true
 Suggests: 
+    knitr,
+    rmarkdown,
     testthat (>= 3.0.0)
 Imports:
   dplyr, 
@@ -24,3 +26,4 @@ Imports:
   plotly,
   maps
 URL: https://sds270-f24.github.io/wnbaherstory/
+VignetteBuilder: knitr
