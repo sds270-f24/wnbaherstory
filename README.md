@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# wnbaherstory <img src="data-raw/wnbaherstory.png" align="right" height="139"/>
+# wnbaherstory <img src="man/figures/wnbaherstory.png" align="right" height="139"/>
 
 <!-- badges: start -->
 
