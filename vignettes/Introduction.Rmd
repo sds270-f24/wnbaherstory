@@ -18,20 +18,20 @@ knitr::opts_chunk$set(
 library(wnbaherstory)
 ```
 
-The goal of this package is to help users to learn more about WNBA trends and see the overall change in the league since it was founded. Additionally we hope that user can find the answers for their questions about the evolution of WNBA. This article will provide you with all the information about each function taht you will need in order to use it. 
+The goal of this package is to help users to learn more about WNBA trends and see the overall change in the league since it was founded. Additionally we hope that user can find the answers for their questions about the evolution of WNBA. This article will provide you with all the information about each function that you will need in order to use it. 
 
 # WNBA players 
 
-## career_ppg
+## career_ppg()
 career_ppg graphs an interactive plot, displaying the average points per game that top 10 WNBA scorers had over the years. 
 User can also add player names to see a plot for specific players. 
 This is a list of all players included in this function: 
 
-1.	Diana Taurasi	10646
+1.  Diana Taurasi	10646
 2.	Tina Charles	7696
-3.	Tina Thompson*	7488
+3.	Tina Thompson	7488
 4.	DeWanna Bonner	7482
-5.	Tamika Catchings*	7380
+5.	Tamika Catchings	7380
 6.	Candice Dupree	6895
 7.	Cappie Pondexter	6811
 8.	Sue Bird	6803
@@ -39,49 +39,79 @@ This is a list of all players included in this function:
 10.	Nneka Ogwumike	6502
 
 
-# WNBA teams 
+# WNBA teams
 
-## plot_wnba_attendance
+## plot_wnba_attendance()
 This function gives a graph for a certain WNBA team attendance record over the years.  
 The data set used in this function includes regukar season games and playoff games. It also includes All Star perfomance games. Here is a list of all teams included: 
 
-Active Teams
-1. Los Angeles Sparks
-2. Phoenix Mercury
-3. New York Liberty
-4. Washington Mystics
-5. Minnesota Lynx
-6. Seattle Storm
-7. Indiana Fever
-8. Connecticut Sun
-9. Chicago Sky
+Active Teams:
+
+1.  Los Angeles Sparks
+
+2.  Phoenix Mercury
+
+3.  New York Liberty
+
+4.  Washington Mystics
+
+5.  Minnesota Lynx
+
+6.  Seattle Storm
+
+7.  Indiana Fever
+
+8.  Connecticut Sun
+
+9.  Chicago Sky
+
 10. Atlanta Dream
+
 11. Dallas Wings
+
 12. Las Vegas Aces
 
-Former Teams
-1. Cleveland Rockers
-2. Utah Starzz
-3. Sacramento Monarchs
-4. Charlotte Sting
-5. Detroit Shock
-6. Orlando Miracle
-7. Portland Fire
-8. Miami Sol
-9. San Antonio Silver Stars
 
-All-Star Rosters
-1. Eastern Conference All Stars
-2. Western Conference All Stars
-3. Team WNBA 
-4. Team Delle Donne 
-5. Team Wilson 
-6. Team Parker 
-7. USAB Women's National Team
+Former Teams:
+
+1.  Cleveland Rockers
+
+2.  Utah Starzz
+
+3.  Sacramento Monarchs
+
+4.  Charlotte Sting
+
+5.  Detroit Shock
+
+6.  Orlando Miracle
+
+7.  Portland Fire
+
+8.  Miami Sol
+
+9.  San Antonio Silver Stars
 
 
-## winRate
+All-Star Rosters:
+
+1.  Eastern Conference All Stars
+
+2.  Western Conference All Stars
+
+3.  Team WNBA 
+
+4.  Team Delle Donne 
+
+5.  Team Wilson 
+
+6.  Team Parker 
+
+7.  USAB Women's National Team
+
+
+## winRate()
 This function calculates the franchise history winning percentage of a WNBA team over the years, and can be used to compare the winning rates between the teams. 
 
-## map_WNBA_teams
-Function shows map of all WNBA teams past and present at any given time. Any of the existing teams can be used as an input.m
+## map_WNBA_teams()
+This function shows a map of all active WNBA teams geographical locations in the year range listed. 
