@@ -1,15 +1,12 @@
 url: https://sds270-f24.github.io/wnbaherstory/
 template:
   bootstrap: 5
-navbar:
-  right:
-    - text: "GitHub"
-      href: "https://github.com/sds270-f24/wnbaherstory"
 
 articles:
-  - title: "Introduction"
+  - title: Vignettes
+    navbar: Vignettes
     contents:
-      - Introduction
+    - Introduction
       
 reference:
 - title: Functions
@@ -25,3 +22,4 @@ reference:
     Dataset that is used in order to run the plot_wnba_attendance() function
   contents: 
     - All_Game_Attendance
+    
