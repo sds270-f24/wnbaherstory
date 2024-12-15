@@ -1,7 +1,16 @@
 url: https://sds270-f24.github.io/wnbaherstory/
 template:
   bootstrap: 5
+navbar:
+  right:
+    - text: "GitHub"
+      href: "https://github.com/sds270-f24/wnbaherstory"
 
+articles:
+  - title: "Introduction"
+    contents:
+      - Introduction
+      
 reference:
 - title: Functions
   desc: >

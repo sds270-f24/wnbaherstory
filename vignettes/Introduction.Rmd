@@ -1,8 +1,8 @@
 ---
-title: "Introduction to wnbaherstory package"
+title: "Introduction"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{my-vignette}
+  %\VignetteIndexEntry{Introduction}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -18,19 +18,11 @@ knitr::opts_chunk$set(
 library(wnbaherstory)
 ```
 
-The goal of this package is to help users to learn more about WNBA trends and see the overall change in the league since it was founded. Additionally we hope that user can find the answers for their questions about the evolution of WNBA. 
+The goal of this package is to help users to learn more about WNBA trends and see the overall change in the league since it was founded. Additionally we hope that user can find the answers for their questions about the evolution of WNBA. This article will provide you with all the information about each function taht you will need in order to use it. 
 
-## Installation 
-To install this package use this code: 
+# WNBA players 
 
-```{r}
-devtools::install_github("sds270-f24/wnbaherstory")
-```
-
-
-## WNBA players 
-
-#career_ppg()
+## career_ppg
 career_ppg graphs an interactive plot, displaying the average points per game that top 10 WNBA scorers had over the years. 
 User can also add player names to see a plot for specific players. 
 This is a list of all players included in this function: 
@@ -46,14 +38,10 @@ This is a list of all players included in this function:
 9.	Candace Parker	6574
 10.	Nneka Ogwumike	6502
 
-Here is an example of how the user can use this function: 
-```{r}
-career_ppg()
-```
 
-## WNBA teams 
+# WNBA teams 
 
-#plot_wnba_attendance()
+## plot_wnba_attendance
 This function gives a graph for a certain WNBA team attendance record over the years.  
 The data set used in this function includes regukar season games and playoff games. It also includes All Star perfomance games. Here is a list of all teams included: 
 
@@ -91,22 +79,9 @@ All-Star Rosters
 6. Team Parker 
 7. USAB Women's National Team
 
-Here is an example of how the user can use this function: 
-```{r}
-plot_wnba_attendance("Chicago Sky")
-```
 
-
-# winRate()
+## winRate
 This function calculates the franchise history winning percentage of a WNBA team over the years, and can be used to compare the winning rates between the teams. 
-Here is an example of how the user can use this function: 
-```{r}
-winRate("Chicago Sky")
-```
 
-# map_WNBA_teams()
-Function shows map of all WNBA teams past and present at any given time. 
-Here is an example of how the user can use this function: 
-```{r}
-map_WNBA_teams(year_range = 2020:2024)
-```
+## map_WNBA_teams
+Function shows map of all WNBA teams past and present at any given time. Any of the existing teams can be used as an input.m
