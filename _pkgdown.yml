@@ -1,8 +1,10 @@
 url: https://sds270-f24.github.io/wnbaherstory/
 template:
   bootstrap: 5
-  
-  
+
+home:
+    hexsticker: data-raw/wnbaherstory.png
+    
 reference:
 - title: Functions
   desc: >
@@ -14,6 +16,6 @@ reference:
     - winRate
 - title: Datasets
   desc: >
-    Datasets that are used in order to run the plot_wnba_attendance() function
+    Dataset that is used in order to run the plot_wnba_attendance() function
   contents: 
     - All_Game_Attendance
